@@ -1,0 +1,36 @@
+
+/* Box for information */
+.boxed{
+	border: 2px solid gray;
+	width: 65%;
+	margin: auto;
+	background-color: white;
+	padding-left: 30px;
+	padding-right: 30px;
+}
+
+/************** Tooltip for email */
+
+/* Tooltip container */
+.tooltip{
+	position: relative;
+	display: inline-block;
+	text-align:center;
+}
+
+/* Tooltip text */
+.tooltip .tooltiptext{
+	visibility: hidden;
+	width: 200px;
+	background-color: white;
+	color: black;
+	text-align: left;
+	padding: 5px 0;
+	position: absolute;
+	z-index: 1; /* Position tooltip text */
+}
+
+/* Show tooltip text when tooltip container is moused over */
+.tooltip:hover .tooltiptext{
+	visibility: visible;
+}
