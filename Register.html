@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+
+	<head> 
+	<meta charset="UTF-8"/>
+	<link rel="stylesheet" type="text/css" href="Register.css">
+	</head>
+
+
+	<body style="background-color:lightyellow; font-family:georgia; color:#692626">
+
+		<!------------------------- Logo + Name of Shop ---------------------->
+		<div style="background-color:#ffcccc;color:rgb(56,0,0);padding:10px;">
+			<h1 style="font-family:georgia; text-align:center; font-size:50px;"> Carleton Cupcakes </h1>
+		</div>
+		
+		<!------------------------- Sign up Box ------------------------------>
+		<h3 style="font-family:georgia; color:#692626"> <b> Sign Up </b> </h3>
+		<!--<div class="boxed">-->
+		
+		<!-- First name -->
+			<form action="action_page.php" method="post">
+				<fieldset>
+					<legend> Please enter your information below! </legend>
+					First name: <br/>
+					<input type="text" name="firstname" />
+					<br/>
+					
+				<!-- Last name -->
+					Last name:<br/>
+					<input type="text" name="lastname"/>
+					<br/>
+				
+				<!-- Email -->
+					Email:<br />
+					<input type="text" name="email"/>
+					<br />
+					
+				<!-- New Password -->
+					Password:<br />
+					<input type="text" name="email"/>
+					<br />
+					<br/>
+					
+				<!------ Gender ------->	
+					<form> <p> Please specify gender </p>
+						<!-- Female -->
+						<input type="radio" name="lady" value="female"/>
+						Female
+						
+						<!-- Male -->
+						<input type="radio" name="man" value="male"/>
+						Male<br />
+						
+						<br/>
+					</form>
+				
+				<!------ Birthday ------->
+				<p> Please enter your birthday </p>
+					<!-- Months -->
+					<select name="months">
+						<option value="january"> January </option>
+						<option value="february"> February </option>
+						<option value="march"> March </option>
+						<option value="april"> April </option>
+						<option value="may"> May </option>
+						<option value="june"> June </option>
+						<option value="july"> July </option>
+						<option value="august"> August </option>
+						<option value="sept"> September </option>
+						<option value="october"> October </option>
+						<option value="november"> November </option>
+						<option value="december"> December </option>
+					</select>
+					
+					<!-- Day -->
+					<input type="number" id="day" name="day" value="1" min="1" max="31"/>
+					
+					<!-- Year -->
+					<input type="number" id="year" name="year" value="2000" min="1918" max="2018"/>
+							
+				<!-- Submit -->
+					<br/>
+					<input type="submit" value="Submit" />
+					
+				</fieldset>
+			</form>
+			
+		
+		<!--</div>-->
+	
+	
+	</body>
+	
+</html>

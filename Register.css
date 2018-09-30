@@ -1,0 +1,10 @@
+/* Box for information */
+
+.boxed{
+	border: 2px solid gray;
+	width: 90%;
+	margin: auto;
+	background-color: white;
+	padding-left: 30px;
+	padding-right: 30px;
+}
