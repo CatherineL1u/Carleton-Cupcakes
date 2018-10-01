@@ -3,7 +3,6 @@
 
 	<head> 
 	<meta charset="UTF-8"/>
-	<link rel="stylesheet" type="text/css" href="Register.css">
 	</head>
 
 
@@ -15,30 +14,48 @@
 		</div>
 		
 		<!------------------------- Sign up Box ------------------------------>
-		<h3 style="font-family:georgia; color:#692626"> <b> Sign Up </b> </h3>
-		<!--<div class="boxed">-->
+		<h2 style="font-family:georgia; color:#692626"> <b> Sign Up </b> </h2>
 		
+		<!-- List w/ details about signing up -->
+		<h4 style="font-family:georgia"> Why sign up? </h4>
+		<ul>
+			<i>
+				<li> You get access to the Favourites function </li>
+					<ul>
+					<li> The items you "Favourites" will appear at the top of the menu every time you visit! </li>
+					</ul>
+				<li> Write reviews for our products </li>
+					<ul>
+						<li> Be a kind consumer - help the community out! </li>
+					</ul>
+				<li> Why not? </li>
+					<ul>
+						<li> Be a part of a great community! </li>
+					</ul>
+			</i>
+		</ul>
+		<!---------- Information Required ---------->
 		<!-- First name -->
 			<form action="action_page.php" method="post">
 				<fieldset>
-					<legend> Please enter your information below! </legend>
-					First name: <br/>
-					<input type="text" name="firstname" />
+					<legend> <b> Please enter your information below! </b> </legend>
+					<label for="firstname">First name: </label> <br/>
+					<input type="text" name="firstname" required />
 					<br/>
 					
 				<!-- Last name -->
-					Last name:<br/>
-					<input type="text" name="lastname"/>
+					<label for="lastname">Last name: </label><br/>
+					<input type="text" name="lastname" required />
 					<br/>
 				
 				<!-- Email -->
-					Email:<br />
-					<input type="text" name="email"/>
+					<label for="email">Email:<br />
+					<input type="text" name="email" required />
 					<br />
 					
 				<!-- New Password -->
-					Password:<br />
-					<input type="text" name="email"/>
+					<label for="password">Password:<br />
+					<input type="text" name="password" required />
 					<br />
 					<br/>
 					
@@ -86,8 +103,18 @@
 				</fieldset>
 			</form>
 			
+		<!------------------------- Connect with Google ------------------------------>	
+		<br />
 		
-		<!--</div>-->
+		<h2 style="font-family:georgia"> 
+		Or connect with <a href="ShareInfo.html"> Google</a>, hassle free! </h2>
+		
+		<!------------------------- Bottom Image ------------------------------>	
+		<p style="text-align:center"><img src="compCupcake.jpg" alt="Cool cupcakes" style="width:25%" ></p>
+		
+			
+		
+		
 	
 	
 	</body>
