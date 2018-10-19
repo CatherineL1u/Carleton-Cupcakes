@@ -1,14 +1,26 @@
 <!DOCTYPE html>
 <html>
 
-<head> <meta charset="UTF-8"/> </head>
+	<head> <meta charset="UTF-8"/> </head>
 
 
-<body style="background-color:lightyellow">
+	<body style="background-color:lightyellow">
 
-	<!------------------------- Logo + Name of Shop ---------------------->
-		<div style="background-color:#ffcccc;color:rgb(56,0,0);padding:10px;">
-			<h1 style="font-family:georgia; text-align:center; font-size:50px;"> Carleton Cupcakes </h1>
+	<!------------------------------------ Logo and Menu -------------------------------------->	
+		<div style="background-color:#ffcccc;color:rgb(56,0,0);padding:20px;">
+			<h1 style="font-family:georgia; text-align:center; font-size:100px;"> Carleton Cupcakes </h1>
+
+		<!------------------------- Webpage menu ---------------------->	
+			<table border=1 style="width:100%">
+				<col width="15%">
+				<tr>
+					<th> <a href="construction.html"> Our Menu </a> </th>
+					<th> <a href="AboutUs.html"> About Us </a> </th>
+					<th> <a href="Register.html"> Sign Up </a> </th>
+					<th> <a href="cupcakeGenerator.html"> Cupcake Generator </a> </th>
+					<th> <a href="construction.html"> Your Cart </a> </th>
+				</tr>
+			</table>
 		</div> 
 		
 	<!------------------------- Thank You heading ---------------------->
@@ -29,24 +41,58 @@
 		<!-- Fun heading and video message -->
 		<h2 style="font-family:georgia; text-align:center"> <i> Please visit us again! </i> </h2>
 		
-		<p style="font-family:georgia; text-align:center"> <i> To show our thanks, please enjoy this fun video! </i> </p>
+		<p style="font-family:georgia; text-align:center"> <i> To show our thanks, please enjoy this fun video to show why Carleton Cupcakes is always the better dessert option. </i> </p>
 		
 		<!-- Video -->
 		<p style="text-align:center"><iframe width="400" height="300" src="https://www.youtube.com/embed/4gW6QuHovTo" frameborder="0" allow="autoplay; encrypted-media" align="center" allowfullscreen ></iframe></p>
 		
 	<!------------------------- Survey ---------------------->
-		<!-- heading -->
-		<h3 style="font-family:georgia"> <i> But wait! Before you go... please fill out our survey! </i> </h3>
-		
-		<!-- radio button survey -->
-		<form action="mailto:carletoncupcakes@emails.com">
-			<!-- yes -->
-			<input type="radio" name="opinion" value="yes" /> <strong> Yes! </strong> <br />
-			<!-- no -->
-			<input type="radio" name="opinion" value="no" /> <strong> No... </strong> <br />
-			<!-- Submit survery results -->
-			<input type="submit" value="Submit the Survey">
-		</form>
+		<div style="margin-left:20px">
+			<!-- heading -->
+			<h3 style="font-family:georgia"> <i> But wait! Before you go... please fill out our survey! </i> </h3>
+			
+			<!-- radio button survey -->
+			<p style="font-family:georgia; font-size:15px"> <i> <b> Did you enjoy our website? </b> </i> </p>
+			<form>
+				<!-- yes -->
+				<input type="radio" name="opinion" value="yes" /> <strong> Yes! </strong> <br />
+				<!-- no -->
+				<input type="radio" name="opinion" value="no" /> <strong> No... </strong> <br />
+			</form>
+			
+			<!-- What Other options do users want to see option -->
+			<p style="font-family:georgia; font-size:15px"> <i> <b> Our bakers are preparing some more food... what would you like to see? </b> </i> </p>
+			<form action="action_page.php">
+				<input list="dessert" />
+					<datalist id="dessert">
+						<option value="Cookies"/>
+						<option value="Cakes" />
+						<option value="Vegan options" />
+						<option value="International options" />
+					</datalist>
+			</form>
+
+			<!-- Text area for other reviews -->
+			<p style="font-family:georgia; font-size:15px"> <i> <b> Other thoughts? </b> </i> </p>
+			<textarea name="message"rows="10"cols="30"> Help us improve Carleton Cupcakes! </textarea>
+			
+			<!----- Number slider---->
+			<!-- Heading -->
+			<p style="font-family:georgia; font-size:15px"> <i> <b> How likely would you recommend us to friends? </b> </i> </p>
+			<!-- 1 -->
+			<label for="one" class="pull-left">1</label>
+			<!-- Range slider -->
+			<input type="range" id="recommend" name="recommend" value="10" />
+			<!-- 10 -->
+			<label for="ten" class="pull-right">10</label>
+			
+			
+			<!-- Submit survey results -->
+			<br />
+			<button type="submit" onclick="alert('Your response has been submitted!')">
+				Submit Survey
+			</button>
+		</div>
 
 </body>	
 
