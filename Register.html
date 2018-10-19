@@ -8,10 +8,22 @@
 
 	<body style="background-color:lightyellow; font-family:georgia; color:#692626">
 
-		<!------------------------- Logo + Name of Shop ---------------------->
-		<div style="background-color:#ffcccc;color:rgb(56,0,0);padding:10px;">
-			<h1 style="font-family:georgia; text-align:center; font-size:50px;"> Carleton Cupcakes </h1>
-		</div>
+		<!------------------------------------ Logo and Menu -------------------------------------->	
+		<div style="background-color:#ffcccc;color:rgb(56,0,0);padding:20px;">
+			<h1 style="font-family:georgia; text-align:center; font-size:100px;"> Carleton Cupcakes </h1>
+		 
+		<!------------------------- Webpage menu ---------------------->	
+			<table border=1 style="width:100%">
+				<col width="15%">
+				<tr>
+					<th> <a href="construction.html"> Our Menu </a> </th>
+					<th> <a href="AboutUs.html"> About Us </a> </th>
+					<th> <a href="Register.html"> Sign Up </a> </th>
+					<th> <a href="cupcakeGenerator.html"> Cupcake Generator </a> </th>
+					<th> <a href="construction.html"> Your Cart </a> </th>
+				</tr>
+			</table>
+		</div> 
 		
 		<!------------------------- Sign up Box ------------------------------>
 		<h2 style="font-family:georgia; color:#692626"> <b> Sign Up </b> </h2>
@@ -95,9 +107,18 @@
 					
 					<!-- Year -->
 					<input type="number" id="year" name="year" value="2000" min="1918" max="2018"/>
-							
+					
+				<!-- I am not a robot list -->
+					<br />
+					<p> Please select one option </p>
+					<select name="robot" required>
+						<option value="maybe">I could be a robot who likes sweets</option>
+						<option value="no">I am not a robot</option>
+					</select>
+				
 				<!-- Submit -->
 					<br/>
+					<br />
 					<input type="submit" value="Submit" />
 					
 				</fieldset>
@@ -110,7 +131,7 @@
 		Or connect with <a href="ShareInfo.html"> Google</a>, hassle free! </h2>
 		
 		<!------------------------- Bottom Image ------------------------------>	
-		<p style="text-align:center"><img src="compCupcake.jpg" alt="Cool cupcakes" style="width:25%" ></p>
+		<p style="text-align:center"><img src="Pictures\compCupcake.jpg" alt="Cool cupcakes" style="width:25%" ></p>
 		
 			
 		
