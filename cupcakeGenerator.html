@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+	<meta charset="utf-8"/>
+	</head>
+
+	<body style="background-color:#e6ffff">
+
+	<!------------------------------------ Logo and Menu -------------------------------------->	
+		<div style="background-color:#ffcccc;color:rgb(56,0,0);padding:20px;">
+			<h1 style="font-family:georgia; text-align:center; font-size:100px;"> Carleton Cupcakes </h1>
+
+		<!------------------------- Webpage menu ---------------------->	
+			<table border=1 style="width:100%">
+				<col width="15%">
+				<tr>
+					<th> <a href="construction.html"> Our Menu </a> </th>
+					<th> <a href="AboutUs.html"> About Us </a> </th>
+					<th> <a href="Register.html"> Sign Up </a> </th>
+					<th> <a href="cupcakeGenerator.html"> Cupcake Generator </a> </th>
+					<th> <a href="construction.html"> Your Cart </a> </th>
+				</tr>
+			</table>
+		</div> 
+		
+	<!-------------- Heading and Instructions -------------->
+		<br />
+		<!-- Heading -->
+		<h1 style="font-family:georgia"> <em> Welcome to the Cupcake Generator! </em> </h1>
+		
+		<!-- Instructions -->
+		<ol type="1">
+			<li style="font-size:20px; color:brown"> <i> Check out our options below and decide what you would like on your vanilla cupcake! </i> </li>
+			<li style="font-size:20px; color:brown"> <i> Click on the button to add our special icing! </i> </li>
+			<li style="font-size:20px; color:brown"> <i> Next, add toppings! </i> </li>
+			<li style="font-size:20px; color:brown"> <i> Have fun and be creative! There is no stopping you! </i> </li>
+			<li style="font-size:20px; color:brown"> <i> Take our survery below to help extend our collection! </i> </li>
+		</ol>
+		
+		<hr />
+	<!--------------- Audio Area ---------------------------->
+		<p style="font-size:20px; color:brown"> Here is some jazz music while you create your cupcake! Enjoy Elder Dilemma by Freedom Trail Studio </p>
+		<audio controls>
+			<source src="Elder_Dilemma.mp3" type="audio/ogg">
+			Your browser does not support the audio element.
+		</audio>
+		
+	<!-------------- Cupcake generator box -------------->
+		<hr />
+		<br />
+		
+		<table border="1" col width="100%">
+					
+			<tr > <!-- row with picture of baker -->
+				<td rowspan="5" style="width:40%; height:40%;"> <img src="Pictures\cupcake_background.png" style="width:100%" alt="Can't start without this picture!"> </td>
+				<!-- heading row -->
+				<td> <h2 style="font-family:georgia; color:brown; width:100%; text-align:center"/><b> Icing </> </h2> </td>				
+				<td> <h2 style="font-family:georgia; color:brown; width:100%; text-align:center"/><b> Toppings </> </h2> </td>				
+			</tr>
+			<tr><!-- 1st row -->
+				<!-- icing -->
+				<td><p style="text-align:center"><button type="button"> <h3 style="font-family:georgia; font-size:10px; color:brown; width:100%"/> <em> Bubblegum </em> </h3> </p> </td>
+				<!-- topping -->
+				<td><p style="text-align:center"><button type="button"> <h3 style="font-family:georgia; font-size:10px; color:brown; width:100%"/> <em> Rainbow Sprinkles </em> </h3> </p> </td>
+
+			</tr>
+			
+				<tr><!-- 2nd row -->
+				<!-- icing -->		
+				<td><p style="text-align:center"><button type="button"> <h3 style="font-family:georgia; font-size:10px; color:brown; width:100%"/> <em> Strawberry </em> </h3> </p> </td>
+				<!-- topping -->
+				<td><p style="text-align:center"><button type="button"> <h3 style="font-family:georgia; font-size:10px; color:brown; width:100%"/> <em> Shredded Coconut </em> </h3> </p> </td>
+
+			</tr>
+			
+				<tr><!-- 3rd row -->
+				<!-- icing -->
+				<td><p style="text-align:center"><button type="button"> <h3 style="font-family:georgia; font-size:10px; color:brown; width:100%"/><em> Vanilla Bean </em> </h3> </p> </td>
+				<!-- topping -->
+				<td><p style="text-align:center"><button type="button"> <h3 style="font-family:georgia; font-size:10px; color:brown; width:100%"/><em> Diced Hard Candy </em> </h3> </p> </td>
+
+			</tr>
+			
+				<tr><!-- 4th row -->
+				<!-- icing -->
+				<td><p style="text-align:center"><button type="button"> <h3 style="font-family:georgia; font-size:10px; color:brown; width:100%"/><em> Coffee </em> </h3> </p> </td>
+				<!-- topping -->
+				<td><p style="text-align:center"><button type="button"> <h3 style="font-family:georgia; font-size:10px; color:brown; width:100%"/><em> Chocolate pieces </em> </h3> </p> </td>
+
+			</tr>
+		
+		</table> 
+		
+		<!-- link to go to paymet page -->
+		<br />
+		<p style="font-size:20px; font-family: georgia">Click<a href="construction.html"> here </a>to pay. </p>
+	<!-------------- Checklist survey -------------->
+		<br />
+		<hr />
+		<br />
+		<h3 style="font-family:georgia; color:brown"> Here are some new toppings we are considering, please check all that you like! </h3>
+		<form>
+			<!-- Options -->
+			<input type="checkbox" name="dessert1" value="candy1"> Snapping candy <br />
+			<input type="checkbox" name="dessert2" value="candy2"> Trademarked hard candy <br />
+			<input type="checkbox" name="dessert3" value="candy3" checked> Flavoured sprinkles <br />
+			<!-- Submit survery results -->
+			<input type="submit" value="Submit the Survey">
+		</form>
+
+
+
+	</body>
+
+</html>
