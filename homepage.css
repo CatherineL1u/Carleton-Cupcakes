@@ -1,0 +1,8 @@
+/*Welcome messages */
+
+/*First letter */
+h2.welcome::first-letter {
+	font-size: 200%;
+	color: #832D3E;
+}
+		
